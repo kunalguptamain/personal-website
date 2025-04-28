@@ -10,31 +10,46 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <header>
+  <!--<header>
     <div class="logo">Kunal Gupta</div>
     <nav>
       <a href="#project_container">Projects</a>
       <a href="mailto:kunalguptazool9@gmail.com">Email</a>
     </nav>
-  </header>
+  </header>-->
   <main id="page_container">
     <section class="hero">
       <div class="hero-left">
-        <img src="profile.jpg" alt="Kunal Gupta" class="profile-photo">
         <div class="cursor-wrapper"></div>
         <h1>Kunal <br> Gupta</h1>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/kunal-gupta-502994174/"><img src="linkedin_icon.svg" alt="LinkedIn"/></a>
           <a href="https://github.com/kunalguptamain"><img src="github_icon.svg" alt="GitHub"/></a>
         </div>
+        
       </div>
       <div class="hero-right">
+
         <div class="tabs">
-          <button class="tab-button active" onclick="switchTab('project_container')" id="projects-tab">Projects</button>
-          <button class="tab-button" onclick="switchTab('publication_container')" id="publications-tab">Publications</button>
+          <a href="#about_container" class="tab-button" id="about-tab">About</a>
+          <a href="#project_container" class="tab-button" id="projects-tab">Projects</a>
+          <a href="#publication_container" class="tab-button" id="publications-tab">Publications</a>
         </div>
+      
+        <!--About Me-->
+        
+        <section id="about_container" class="tab-content">
+          <h2 class="section-title">About Me</h2>
+          <img src="profile.png" alt="About icon" class="section-icon"/>
+          <p class="about-description">
+            I’m a software engineer specializing in interactive web experiences and elegant, maintainable code.  
+            When I’m not coding, you’ll find me exploring the latest in AI, hiking, or brewing my next cup of artisan coffee.
+          </p>
+        </section>
+        
         
         <!-- Projects Section -->
+
         <section id="project_container" class="tab-content active">
           <h2 class="section-title">Projects</h2>
           <div class="projects-grid">

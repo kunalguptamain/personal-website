@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const wrapper = document.querySelector('.cursor-wrapper');
   const N        = 12;      // number of arrows
-  const R        = 200;     // orbit radius in px
+  const R        = 220;     // orbit radius in px
   const PULSE_HEIGHT = 40;
   const R_DURATION = 8000;
   const DURATION = 16000;    // ms per full orbit
@@ -97,24 +97,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   update();
 });
-
-function switchTab(tabId) {
-  // Hide all tabs
-  document.querySelectorAll('.tab-content').forEach(tab => {
-    tab.classList.remove('active');
-  });
-  
-  // Show selected tab
-  document.getElementById(tabId).classList.add('active');
-  
-  // Update button states
-  document.querySelectorAll('.tab-button').forEach(btn => {
-    // Remove active class from all buttons
-    btn.classList.remove('active');
-    
-    // Add active class only to the button associated with the visible tab
-    if(btn.onclick.toString().includes(`'${tabId}'`)) {
-      btn.classList.add('active');
-    }
-  });
-}
