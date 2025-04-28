@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kunal Gupta</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Kunal Gupta</div>
+    <nav>
+      <a href="#project_container">Projects</a>
+      <a href="mailto:kunalguptazool9@gmail.com">Email</a>
+    </nav>
+  </header>
+  <main id="page_container">
+    <section class="hero">
+      <div class="hero-left">
+        <img src="profile.jpg" alt="Kunal Gupta" class="profile-photo">
+        <div class="cursor-wrapper"></div>
+        <h1>Kunal <br> Gupta</h1>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/kunal-gupta-502994174/"><img src="linkedin_icon.svg" alt="LinkedIn"/></a>
+          <a href="https://github.com/kunalguptamain"><img src="github_icon.svg" alt="GitHub"/></a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="tabs">
+          <button class="tab-button active" onclick="switchTab('project_container')" id="projects-tab">Projects</button>
+          <button class="tab-button" onclick="switchTab('publication_container')" id="publications-tab">Publications</button>
+        </div>
+        
+        <!-- Projects Section -->
+        <section id="project_container" class="tab-content active">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <a href="#" class="project-card">
+              <img src="project1.png" alt="Project One">
+              <div class="project-info">
+                <h3>Project One</h3>
+                <p>Short description of project one goes here.</p>
+              </div>
+            </a>
+            <a href="#" class="project-card">
+              <img src="project2.png" alt="Project Two">
+              <div class="project-info">
+                <h3>Project Two</h3>
+                <p>Short description of project two goes here.</p>
+              </div>
+            </a>
+            <a href="#" class="project-card">
+              <img src="project3.png" alt="Project Three">
+              <div class="project-info">
+                <h3>Project Three</h3>
+                <p>Short description of project three goes here.</p>
+              </div>
+            </a>
+            <a href="#" class="project-card">
+              <img src="project4.png" alt="Project Four">
+              <div class="project-info">
+                <h3>Project Four</h3>
+                <p>Short description of project four goes here.</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      
+        <!-- Publications Section -->
+        <section id="publication_container" class="tab-content">
+          <h2 class="section-title">Publications</h2>
+          <ul class="publications-list">
+            <li>
+              <span class="pub-title">Gupta, K.</span> “Title of Paper One,” *Journal Name*, 2023.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
