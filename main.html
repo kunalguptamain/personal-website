@@ -10,21 +10,15 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <!--<header>
-    <div class="logo">Kunal Gupta</div>
-    <nav>
-      <a href="#project_container">Projects</a>
-      <a href="mailto:kunalguptazool9@gmail.com">Email</a>
-    </nav>
-  </header>-->
   <main id="page_container">
     <section class="hero">
       <div class="hero-left">
         <div class="cursor-wrapper"></div>
         <h1>Kunal <br> Gupta</h1>
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/kunal-gupta-502994174/"><img src="linkedin_icon.svg" alt="LinkedIn"/></a>
-          <a href="https://github.com/kunalguptamain"><img src="github_icon.svg" alt="GitHub"/></a>
+          <a href="https://www.linkedin.com/in/kunal-gupta-502994174/"  target="_blank"><img src="linkedin_icon.svg" alt="LinkedIn"/></a>
+          <a href="https://github.com/kunalguptamain"  target="_blank"> <img src="github_icon.svg" alt="GitHub"/></a>
+          <a href="resume-kunal-gupta.pdf" class="btn-resume" target="_blank" rel="noopener">Resume</a>
         </div>
         
       </div>
@@ -32,7 +26,7 @@
 
         <div class="tabs">
           <a href="#about_container" class="tab-button" id="about-tab">About</a>
-          <a href="#project_container" class="tab-button" id="projects-tab">Projects</a>
+          <a href="#project_container" class="tab-button" id="projects-tab">Selected Projects</a>
           <a href="#publication_container" class="tab-button" id="publications-tab">Publications</a>
         </div>
       
@@ -51,34 +45,41 @@
         <!-- Projects Section -->
 
         <section id="project_container" class="tab-content active">
-          <h2 class="section-title">Projects</h2>
+          <h2 class="section-title">Selected Projects</h2>
           <div class="projects-grid">
             <a href="#" class="project-card">
-              <img src="project1.png" alt="Project One">
+              <img src="dsl_header_alt.png" alt="Project One">
               <div class="project-info">
-                <h3>Project One</h3>
-                <p>Short description of project one goes here.</p>
+                <h3>Dynamical Systems Lab</h3>
+                <p>Developed a haptic vest to assist visually impared people in navigating crowded environments</p>
               </div>
             </a>
             <a href="#" class="project-card">
-              <img src="project2.png" alt="Project Two">
+              <img src="boeke_lab.jpg" alt="Project Two">
               <div class="project-info">
-                <h3>Project Two</h3>
-                <p>Short description of project two goes here.</p>
+                <h3>Boeke Lab</h3>
+                <p>Designing AI models to generate synthetic DNA for testing in mouse embryonic stem cells, enabling consistent gene expression through artificial promoters.</p>
               </div>
             </a>
             <a href="#" class="project-card">
-              <img src="project3.png" alt="Project Three">
+              <img src="MERIT.gif" alt="Project Three">
               <div class="project-info">
-                <h3>Project Three</h3>
-                <p>Short description of project three goes here.</p>
+                <h3>Smart Wearables Lab</h3>
+                <p>Developing deep learning models to decode biosignals for gesture prediction in prosthetic control, using multimodal transformers and mechanistic interpretability.</p>
               </div>
             </a>
             <a href="#" class="project-card">
-              <img src="project4.png" alt="Project Four">
+              <img src="evo.gif" alt="Project Four">
               <div class="project-info">
-                <h3>Project Four</h3>
-                <p>Short description of project four goes here.</p>
+                <h3>Evolution Simulation</h3>
+                <p>Evolving creatures learn to move and sense through neural networks and genome mutations, developing crowd dynamics.</p>
+              </div>
+            </a>
+            <a href="#" class="project-card">
+              <img src="locomotion.gif" alt="Project Four">
+              <div class="project-info">
+                <h3>Robotic Locomotion</h3>
+                <p>Developed a robotic arm to manipulate blocks in its environment, using Jacobian kinematics and PID control.</p>
               </div>
             </a>
           </div>
@@ -89,7 +90,11 @@
           <h2 class="section-title">Publications</h2>
           <ul class="publications-list">
             <li>
-              <span class="pub-title">Gupta, K.</span> “Title of Paper One,” *Journal Name*, 2023.
+              <a href="https://ieeexplore.ieee.org/document/10610638" target="_blank" rel="noopener">
+                <span class="pub-title">Tyacke, E.; Gupta, K.; Patel, J.; Katoch, R.; Atashzar, S. F.</span>
+                “From Unstable Electrode Contacts to Reliable Control: A Deep Learning Approach for HD-sEMG in Neurorobotics,”
+                <em>IEEE Transactions on Neural Systems and Rehabilitation Engineering</em>, 2023.
+              </a>
             </li>
           </ul>
         </section>
